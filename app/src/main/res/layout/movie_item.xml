@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="movie"
+            type="com.bytestechno.tentwenty_movie.data.models.movies.MovieData" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/movie_banner"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/movie_banner"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{movie.posterPath}"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:layout_toStartOf="@+id/btn_book"
+            android:layout_toEndOf="@+id/movie_banner"
+            android:layout_toLeftOf="@+id/btn_book"
+            android:layout_toRightOf="@+id/movie_banner">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{movie.originalTitle}" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{movie.releaseDate}" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{movie.adult ? `Adult`: `Non-Adult`}" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_500"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/btn_book"
+            android:layout_toEndOf="@+id/movie_banner"
+            android:layout_toLeftOf="@+id/btn_book"
+            android:layout_toRightOf="@+id/movie_banner"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/btn_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOK"
+            android:padding="10dp"
+            android:background="@drawable/btn_stroke_bg"
+            android:textColor="@color/purple_500"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</layout>

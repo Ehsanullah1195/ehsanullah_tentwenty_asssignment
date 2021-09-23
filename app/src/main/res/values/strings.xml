@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">tentwenty_movie</string>
+    <string name="movie_banner">Movie Banner</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="date">Date:</string>
+    <string name="genre">Genre:</string>
+    <string name="overview">Overview</string>
+    <string name="location">Location:</string>
+    <string name="cinema">Cinema:</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="choose_cinema">Choose Cinema</string>
+    <string name="enter_seat_number">Enter Seat Number</string>
+    <string name="seat_number">Seat Number</string>
+    <string name="reserve_seat">Reserve seat</string>
+    <string name="book">Book</string>
+    <string name="ticket_num">Ticket Number</string>
+    <string name="movie">Movie</string>
+    <string name="ticket_detail">Ticket Detail</string>
+
+
+    <string-array name="location">
+        <item>Islamabad</item>
+        <item>Lahore</item>
+        <item>Karachi</item>
+        <item>Peshawar</item>
+        <item>Faisalabad</item>
+        <item>Rawalpindi</item>
+    </string-array>
+
+
+    <string-array name="cinema">
+        <item>Cinepax</item>
+        <item>CineGold</item>
+        <item>PAF</item>
+        <item>Safari</item>
+    </string-array>
+
+</resources>
